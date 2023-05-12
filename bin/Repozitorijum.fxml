@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="582.0" prefWidth="606.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RepozitorijumController">
+   <children>
+      <AnchorPane fx:id="pane1" layoutX="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="616.0" style="-fx-background-color: #abaaaa;">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/new-document.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="69.0" layoutY="21.0" text="Unesi naziv novog fajla:">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="field_Fajl" layoutX="246.0" layoutY="15.0" prefHeight="37.0" prefWidth="190.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Button fx:id="button_OK" layoutX="443.0" layoutY="16.0" mnemonicParsing="false" onAction="#goToPane2" text="OK">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <ListView fx:id="list" layoutX="14.0" layoutY="66.0" prefHeight="466.0" prefWidth="586.0" />
+            <Label fx:id="label_Ime" layoutX="14.0" layoutY="540.0" text="Repozitorijum korisnika">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_Prikazi" layoutX="500.0" layoutY="15.0" mnemonicParsing="false" onAction="#prikazi" prefHeight="40.0" prefWidth="98.0" text="Prikaži sve" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane2" layoutX="-1.0" layoutY="-1.0" prefHeight="582.0" prefWidth="616.0" visible="false">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="199.0" text="Unesi tekst u novi fajl:">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="field_Text" layoutX="14.0" layoutY="44.0" prefHeight="479.0" prefWidth="586.0" wrapText="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextArea>
+            <Button fx:id="buttonUnesi" layoutX="546.0" layoutY="538.0" mnemonicParsing="false" onAction="#napraviFajl" text="Unesi">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

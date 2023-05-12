@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="208.0" prefWidth="416.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PorukaRegistracijaController">
+   <children>
+      <Label layoutX="13.0" layoutY="6.0" prefHeight="66.0" prefWidth="390.0" text="Uspješno ste kreirali nalog, putanja vašeg sertifikata je:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_Putanja" layoutX="13.0" layoutY="64.0" prefHeight="82.0" prefWidth="390.0" text="putanja" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_OK" layoutX="186.0" layoutY="157.0" mnemonicParsing="false" onAction="#goToRepozitorijum" text="OK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
